@@ -1,0 +1,21 @@
+.text{
+    background: rgb(211, 204, 184);
+    line-height: 1.8;
+}
+.img{
+    float: right;
+    
+}
+.text1{
+    font-style: italic;
+}
+.h1{
+    background: url('bg.jpg');
+    margin: 0px ;
+}
+.text2{
+    background: url('bg.jpg')
+}
+.img22{
+    float: right;
+}
