@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap&subset=cyrillic,cyrillic-ext,latin-ext');
+body{
+    width: 1024px;
+    padding: 0;
+    margin: 0;
+    background: url(bg.jpg) no-repeat;
+}
+.wrapper{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.clear{
+    clear: both;
+}
+
+.main-content{
+    min-height: 600px;
+    
+    float: left;
+    width: calc(100% - 320px);
+    font-family: 'Staatliches', cursive;
+}
+.container-footer{
+    float: right;
+}
+.left-panel{
+    
+
+    float: left;
+    width: 300px;
+    margin-right: 20px;
+    
+}
+
+#header{
+    background: rgb(232, 232, 245);
+    
+}
+
+#footer{
+    
+    margin: 10px;
+}
+#main{
+   
+   margin-top: 15px;
+ 
+}
+aside{
+    width: 35%;
+}
+section{
+    width: 65%;
+}
+aside img{
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+}
+.menu, .inner-menu{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+@import url('https://fonts.googleapis.com/css?family=Staatliches&display=swap&subset=latin-ext');
+
+.clear{
+    clear: both;
+}
+.head-info{
+    float: right;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.head-caption{
+    font-size: 50px;
+    display: inline;
+    text-align: center;
+}
+* {box-sizing: border-box; margin: 0;}
+.widget {
+  padding: 20px 30px;
+  
+  font-family: 'Roboto', sans-serif;
+}
+.widget-title {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #222;
+  font-size: 16px;
+  padding-left: 15px;
+  margin-bottom: 15px;
+  border-left: 2px solid #b99d61;
+}
+.widget-list {
+  padding: 0;
+  list-style: none;
+}
+.widget-list a:before {
+  content: "\2014";
+  margin-right: 14px;
+}
+.widget-list a {
+  text-decoration: none;
+  outline: none;
+  display: block;
+  padding: 6px 0; 
+  letter-spacing: 1px;
+  font-weight: 300;
+  color: #444;
+  transition: .3s linear;
+}
+.widget-list a:hover {color: #b99d61;}
+p{
+    margin: 8px;
+}
+.head-info1{
+    height: 80px;
+  font-size: 50px;
+  font-family: 'Pacifico', cursive;
+ color: rgb(43, 46, 219);
+}
+img{
+    margin-right: 200px;
+}
+.letter{
+    
+    font-size: 180%;   
+}
+h1{
+    text-align: center;
+    font-size: 55px;
+    color: teal;
+}
+.main-top-mini-text{
+    color: #444;
+}
+}
+.main-text{
+    float: left;
+}

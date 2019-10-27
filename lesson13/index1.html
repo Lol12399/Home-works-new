@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    em{color: red;}
+    </style>
+</head>
+<body>
+   <!--Forms
+    Создать форму с таким набором полей
+1. Имя (обязательное, атрибут name = 'fname')
+2. Фамилия (атрибут name = 'sname')
+3. Возраст (числовое от 1 до 100)(атрибут name = 'age') 
+4. Почта (name = 'mail')
+5. Дата рождения (name = 'bday')
+6. Телефон (обязательное)(name = 'phone')
+7. Email получателя (обязательное, только для чтения, в значение value ваша почта)(name = 'mymail')
+8. Кнопка submit с текстом Отослать 
+
+Дополнительно можете почитить как работает тег label и применить к форме.
+
+Форма будет отправлять данные методом post на сервер по адресу
+http://nickblack.pro/send.php
+    -->
+    
+    <form action="http://nickblack.pro/send.php" method="POST" name="form" id="form">
+        <fieldset id="form" name="form">
+            <label for="fname">Имя<em>*</em></label>
+            <input type="text" id="fname" name="fname" required autofocus><br><br>
+            <label for="sname">Фамилия</label>
+            <input type="text" id="sname" name="sname"><br><br>
+            <label for="age">Возраст</label>
+            <input type="text" id="age" name="age" min="1" max="100"><br><br>
+            <label for="mail">Почта</label>
+            <input type="email" id="mail" name="mail"><br><br>
+            <label for="bday">Дата рождения</label>
+            <input type="date" id="bday" name="bday"><br><br>
+            <label for="phone">Телефон<em>*</em></label>
+            <input type="text" id="phone" name="phone" required><br><br>
+            <label for="mymail">Email Получателя</label>
+            <input type="text" id="mymail" name="mymail" readonly value="h3yinflameqq@gmail.com" required><br><br>
+            <input type="submit" id="submit" name="submit" value="Отослать"><br><br>
+        </fieldset>
+    </form>
+    
+</body>
+</html>
