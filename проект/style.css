@@ -1,0 +1,480 @@
+body {
+    margin: 0px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    color: #6c7279;
+    background-color: #fff;
+
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+/* HEADER */
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    
+}
+
+
+
+
+.header{
+    
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header__inner{
+    padding: 35px 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #1234;
+    align-items: center;
+
+}
+.nav{
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.nav-link{
+    margin-left: 50px;
+    color: #fff;
+    text-decoration: none;
+    opacity: 0,75;
+    transition: opacity .1s linear;
+}
+.nav-link:first-child{
+    margin-left: 0;
+}
+
+.nav-link:hover{
+    text-decoration: none;
+    opacity: 1;
+}
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 751px;
+    background: #cacaca url(1.jpg)  center no-repeat / cover;
+    padding-top: 100px;
+}
+.intro-title{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 65px;
+    color: #fff;
+    line-height: 1.1;
+    font-weight: 700;
+    text-transform: uppercase;
+    
+}
+.intro-inner{
+    width: 100%;
+    max-width: 970px;
+    margin: 0 auto;
+    text-align: center;
+}
+.intro-subtitle{
+    margin-bottom: 60px;
+    font-size: 22px;
+    color: #ffffff;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.btn{
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 2px;
+    padding: 14px 40px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background .1s linear;
+    text-align: center;
+}
+ .btn--red {
+     background-color: #e84545;
+
+ }
+
+ .btn--red:hover{
+     background-color: #ce4343;
+ }
+
+.btn--long{
+    min-width: 260px;
+}
+ .features{
+     display: flex;
+     margin: 100px 0;
+     flex-wrap: wrap;
+
+ }
+
+ .features-item{
+     width: 33.33333%;
+     text-align: center;
+     padding: 0 40px;
+     margin: 25px 0;
+ }
+
+ .features-icon{
+     margin-bottom: 25px;
+ }
+
+.features-title{
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #2d3033;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.features-text{
+    font-size: 14px;
+    line-height: 1.5;
+    color: #6c7279;
+}
+.team{
+    margin: 100px 0 70px;
+}
+.team-inner{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+.team-item{
+    margin-bottom: 30px;
+    width: 25%;
+    padding: 0 15px;
+}
+.team-photo{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.team-name{
+    margin-bottom: 8px;
+    font-size: 22px;
+    color: #e84545;
+}
+.team-prof{
+    margin-bottom: 15px;
+    font-size: 13px;
+    color: #e84545;
+    text-transform: uppercase;
+}
+.team-text{
+    font-size: 14px;
+    color: #c2c4c7;
+    margin-bottom: 20px;
+}
+.social{
+    display: flex;
+}
+.social--footer{
+    justify-content: center;
+}
+.social-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: solid #e8ecee;
+    margin-right: 4px;
+    background-color: #fff;
+    transition: background .1s linear;
+}
+.social-icon{
+    display: block;
+    height: 18px;
+    fill:#c6cacc;
+    transition: fill .1s linear;
+}
+.social--footer .social-item{
+    background-color: transparent;
+    border-width: 2px;
+    border-color: #fff;
+    border-radius: 2px;
+}
+.social--footer .social-item:hover{
+    background-color: #fff;
+}
+.social-item:hover{
+    background-color: #e8ecee;
+}
+.social-item:hover .social-icon{
+    fill: #e84545;
+   
+
+}
+.social--footer .social--icon{
+    fill: #fff;
+}
+.revievs{
+    background-color: #53354a;
+}
+.revievs-item{
+    display: flex;
+    flex-wrap: wrap;
+}
+.revievs-photo{
+    width: 50%;
+    height: 500px;
+    position: relative;
+}
+.revievs-img{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 1;
+    transform: translateY(-50%);
+}
+.revievs-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    padding-left: 80px;
+}
+.revievs-text{
+    margin-bottom: 20px;
+    font-family: 'Cardo', sans-serif;
+    font-style: italic;
+    font-size: 36px;
+    line-height: 1.2;
+    color: #fff;
+
+}
+.revievs-author{
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+}
+.download{
+    margin: 90px 0;
+    text-align: center;
+
+}
+.download-tittle{
+    margin-bottom: 10px;
+    font-size: 28px;
+    color: #2d3033;
+    font-weight: 300;
+
+}
+.download-text{
+    margin-bottom: 30px;
+    font-size: 13px;
+    color: #2d3033;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.footer{
+    
+    background-color: #3a3e64;
+}
+.footer-inner{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 70px 0;
+}
+.footer-block{
+    width: 33.33333%;
+    text-align: center;
+    padding: 0 15px;
+}
+.footer-tittle{
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.footer-text{
+    line-height: 1.5;
+    font-style: normal;
+    color: rgba(255, 255, 255, .5);
+    font-size: 14px;
+    
+
+}
+.copyright{
+    padding: 20px 0;
+    background-color: #313454;
+}
+.copyright-text{
+    text-align: center;
+    font-size: 14px;
+    color: gray;
+    line-height: 1.5;
+
+}
+.copyright-text span{
+    color: #fff;
+}
+.burger{
+    display: none;
+    background: none;
+    border: 0;
+    padding: 15px 0;
+    cursor: pointer;
+}
+.burger-item{
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #000;
+    position: relative;
+    
+}
+.burger-item:before,
+.burger-item:after{
+    content: ;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+
+}
+.burger-item:before{
+    width: 30px;
+    top: -8px;
+    background-color: #000;
+}
+.burger-item:after{
+    width: 30px;
+    bottom: -8px;
+    background-color: #000;
+}
+@media (max-width: 991px) {
+    .nav{
+        display: none;
+    }
+    .burger{
+        display: block;
+    }
+    .intro-title{
+        font-size: 40px;
+    }
+    .features-item{
+        width: 50%;
+    }
+    .team-item{
+        width: 50%;
+        text-align: center;
+    }
+    .team-photo{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .social{
+        justify-content: center;
+    }
+    .revievs-photo{
+        overflow: hidden;
+        width: 100%;
+        margin: 15px 0 40px;
+    }
+    .revievs-content{
+        width: 100%;
+        padding-left: 0;
+        padding-bottom: 40px;
+    }
+    .revievs-img{
+        min-width: 991px;
+        right: -15px;
+    }
+}
+@media (max-width: 767px) {
+    .intro{
+        height: auto;
+        padding-top: 130px;
+        padding-bottom: 30px;
+    }
+    .intro-title{
+        font-size: 30px;
+    }
+    .intro-subtitle{
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+    .features{
+        margin: 40px 0;
+    }
+    .features-item{
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .team{
+        margin: 60px 0 30px;
+    }
+    .team-item{
+        width: 100%;
+        text-align: center;
+    }
+    .revievs-text{
+        font-size: 25px;
+    }
+    .download{
+        margin: 50px 0;
+    }
+    .download-tittle{
+        font-size: 24px;
+    }
+    .footer-inner{
+        padding: 30px 0;
+    }
+    .footer-block{
+        width: 100%;
+        margin-bottom: 30px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .footer-block:last-child{
+        margin-bottom: 0;
+    }
+}
+@media (max-width: 595px){
+    .revievs-img{
+        right: -100px;
+    }
+}
+@media (max-width: 340px){
+    .revievs-img{
+        right: -250px;
+    }
+}
